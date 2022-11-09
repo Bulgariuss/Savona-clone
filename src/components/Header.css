@@ -1,0 +1,81 @@
+.header-main {
+    color: white;
+    width: 960px;
+    height: 160px;
+    margin: auto;
+    position: relative;
+}
+.header-logo {
+    position:absolute;
+    cursor: pointer;
+}
+.header-right {
+    width: 735px;
+    height: 165px;
+    position:relative;
+    left: 225px;
+    bottom: 5px;
+}
+.slogan {
+    position: absolute;
+    bottom: 5px;
+    
+}
+.btn1 {
+    width: 153px;
+    height: 38px;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.btn2 {
+    width: 177px;
+    height: 38px;
+    position: absolute;
+    right: 303px;
+    top: 35px;
+    cursor: pointer;
+}
+.btn3 {
+    width: 118px;
+    height: 38px;
+    position: absolute;
+    right: 180px;
+    top: 35px;
+    cursor: pointer;
+}
+.glow {
+    position: absolute;
+    top: 78px;
+    left: 595px;
+}
+.order {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 153px;
+    height: 72px;
+    background: url(../img/bg_order.png) no-repeat;
+    color: #814131;
+    font-size: 14px;
+}
+.btnorder {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.amountdiv {
+    position: absolute;
+    left: 10px;
+    bottom: 13px;
+}
+.pricediv {
+    position: absolute;
+    right: 15px;
+    bottom: 13px;
+}
+.amount, .price {
+    font-weight: bold;
+    color: #CE362E;
+}
