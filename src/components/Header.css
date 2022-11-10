@@ -25,7 +25,7 @@
     width: 153px;
     height: 38px;
     position: absolute;
-    right: 15px;
+    right: 10px;
     bottom: 20px;
     cursor: pointer;
 }
@@ -49,6 +49,7 @@
     position: absolute;
     top: 78px;
     left: 595px;
+    z-index: -999;
 }
 .order {
     position: fixed;
@@ -64,6 +65,7 @@
     position: absolute;
     top: 5px;
     left: 10px;
+    cursor: pointer;
 }
 .amountdiv {
     position: absolute;

@@ -1,8 +1,12 @@
 import React from 'react'
+import menu from '../img/menu.png'
+import "./Aside.css"
 
 const Aside = () => {
   return (
-    <div>Aside</div>
+    <div className='main-aside'>
+        <img src={menu} alt="" className='menubtn'/>
+    </div>
   )
 }
 
