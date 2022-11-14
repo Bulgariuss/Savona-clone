@@ -42,3 +42,84 @@
 .newsItem:hover {
     text-decoration: underline;
 }
+.fbBanner {
+    position: relative;
+    z-index: 5353;
+    width: 315px;
+    height: 130px;
+    background: url(../img/pizzabg.jpg) no-repeat ;
+    background-size: 315px 250px;
+}
+.fbBannerBlur {
+    background: linear-gradient( to bottom, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 100% );
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.fbLogo {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+    background: url(../img/fblogo.png) ;
+    background-size: contain;
+}
+.bannerName {
+    color: white;
+    position: absolute;
+    margin: 0;
+    font-size: 18px;
+    top: 8px;
+    left: 70px;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+}
+.bannerName:hover {
+    text-decoration: underline;
+}
+.bannerFollows {
+    color: white;
+    position: absolute;
+    margin: 0;
+    font-size: 12px;
+    top: 30px;
+    left: 70px;
+    font-weight: normal;
+}
+.follow {
+    position: absolute;
+    background: url(../img/bannerFollow.png) no-repeat;
+    width: 104px;
+    height: 24px;
+    left: 8px;
+    bottom: 8px;
+    border:none; 
+    cursor: pointer;
+}
+.follow:hover {
+    opacity: 0.95;
+}
+.share {
+    position: absolute;
+    background: url(../img/bannerShare.png) no-repeat;
+    width: 90px;
+    height: 24px;
+    right: 8px;
+    bottom: 8px;
+    border:none; 
+    cursor: pointer;
+}
+.share:hover {
+    opacity: 0.96;
+}
+.space {
+    width: 730px;
+    padding: 25px 0;
+    margin-left: 40px;
+}

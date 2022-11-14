@@ -4,6 +4,8 @@ import header from '../img/headerfb.png'
 import promobanner from '../img/promobanner.jpg'
 import locationbanner from '../img/locationbanner.jpg'
 import bbqbanner from '../img/bbqbanner.png'
+import logoSmall from '../img/savona-logo-small.png'
+import fblogo from '../img/fblogo.png'
 
 
 const allNews = [{
@@ -47,7 +49,18 @@ const Content = () => {
                 </div>
               ) )}
             </div>
+            <div className="fbBanner">
+              <div className="fbBannerBlur"></div>
+              <a href='https://www.facebook.com/savona.pizzaclub/' alt="" className="fbLogo" target="_blank"/>
+              <a href='https://www.facebook.com/savona.pizzaclub/' className="bannerName" target="_blank">Savona PizzaClub</a>
+              <h2 className="bannerFollows">5600 obserwujący</h2>
+              <a href='https://www.facebook.com/savona.pizzaclub/' className="follow" target="_blank"></a>
+              <a href='https://www.facebook.com/savona.pizzaclub/' className="share" target="_blank"></a>
+            </div>
           </div>
+        </div>
+        <div className="space">
+          <img src={logoSmall} alt="" />
         </div>
     </div>
   )
