@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+.categories {
+    width: auto;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.categoryContainer {
+    height: 20px;
+    display: inline-block;
+}
+.category {
+    height: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #814131;
+    opacity: .90;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+
+.separate {
+    width: 24px;
+    float: left;
+    height: 20px;
+    background: url('http://savonapizza.pl/public/_savona/image/icon/icons_pack.png') no-repeat center -32px;
+}

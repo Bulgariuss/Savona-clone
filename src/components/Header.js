@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css'
+import './styles/Header.css'
 import logo from '../img/logo.png'
 import slogan from '../img/slogan.png'
 import btn1 from '../img/btn-1.png'
@@ -7,11 +7,12 @@ import btn2 from '../img/btn-2.png'
 import btn3 from '../img/btn-3.png'
 import glow from '../img/glow.png'
 import btnorder from '../img/btn_order.png'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
   return (
     <header className='header-main'>
-        <img src={logo} alt="" className="header-logo"/>
+        <Link to="/"><img src={logo} alt="" className="header-logo"/></Link>
         <div className="header-right"> 
             <img src={slogan} alt="" className='slogan'/>
             <img src={btn1} alt="" className='btn1'/>

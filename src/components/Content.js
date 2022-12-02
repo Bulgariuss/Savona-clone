@@ -1,5 +1,5 @@
 import React from 'react'
-import './Content.css'
+import './styles/Content.css'
 import header from '../img/headerfb.png'
 import promobanner from '../img/promobanner.jpg'
 import locationbanner from '../img/locationbanner.jpg'
@@ -31,7 +31,7 @@ const Content = () => {
  
   return (
     <div className="content">
-        <a href="#">
+        <a href="https://www.facebook.com/savona.pizzaclub" target="_blank">
           <img src={header} alt=""  className='headerfb'/>
         </a>
         <div className="info">

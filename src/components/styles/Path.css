@@ -1,0 +1,16 @@
+.path {
+    width: 735px;
+    height: 40px;
+    font-size: 12px;
+    padding: 0 0 0 5px;
+}
+.pathToMain {
+    color: black;
+    text-decoration: none;
+}
+.pathToMain:hover {
+    text-decoration: underline;
+}
+.pathname {
+    color: #B01814
+}

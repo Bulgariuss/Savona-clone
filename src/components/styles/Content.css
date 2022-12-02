@@ -2,6 +2,7 @@
     margin-left: 37px;
 }
 
+
 .info {
     margin-top: 60px;
     display: flex;
@@ -21,7 +22,7 @@
     width: 285px;
     height: 127px;
     padding: 50px 15px 0 15px;
-    background: url(../img/news.png) no-repeat;
+    background: url(../../img/news.png) no-repeat;
     overflow: hidden;
 }
 .fullItem {
@@ -47,7 +48,7 @@
     z-index: 5353;
     width: 315px;
     height: 130px;
-    background: url(../img/pizzabg.jpg) no-repeat ;
+    background: url(../../img/pizzabg.jpg) no-repeat ;
     background-size: 315px 250px;
 }
 .fbBannerBlur {
@@ -66,7 +67,7 @@
     top: 8px;
     left: 8px;
     cursor: pointer;
-    background: url(../img/fblogo.png) ;
+    background: url(../../img/fblogo.png) ;
     background-size: contain;
 }
 .bannerName {
@@ -94,7 +95,7 @@
 }
 .follow {
     position: absolute;
-    background: url(../img/bannerFollow.png) no-repeat;
+    background: url(../../img/bannerFollow.png) no-repeat;
     width: 104px;
     height: 24px;
     left: 8px;
@@ -107,7 +108,7 @@
 }
 .share {
     position: absolute;
-    background: url(../img/bannerShare.png) no-repeat;
+    background: url(../../img/bannerShare.png) no-repeat;
     width: 90px;
     height: 24px;
     right: 8px;
