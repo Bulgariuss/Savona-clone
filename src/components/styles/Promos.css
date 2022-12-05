@@ -1,0 +1,96 @@
+.infoBanner {
+    margin-bottom: 30px;
+}
+
+.pagesContainer {
+    width: 735px;
+    height: 35px;
+    display: block;
+    position: relative;
+    margin: 0 0 20px -20px;
+    padding: 25px 0 21px 20px;
+    background: url('http://savonapizza.pl/public/_savona/image/template/bg_pack.png') no-repeat -423px 0;
+}
+.prev {
+    width: 183px;
+    height: 35px;
+    float: left;
+    background: url('http://savonapizza.pl/public/_savona/image/template/bg_pack.png') no-repeat -500px -90px;
+    cursor: pointer;
+}
+.next {
+    width: 159px;
+    height: 35px;
+    float: right;
+    background: url('http://savonapizza.pl/public/_savona/image/template/bg_pack.png') no-repeat -683px -90px;
+    cursor: pointer;
+}
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+.pages {
+    width: auto;
+    height: 29px;
+    float: left;
+    margin-left: 55px;
+}
+.page {
+    width: 29px;
+    height: 29px;
+    float: left;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Georgia;
+    color: #d0382f;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.selected {
+    color: #fff;
+    background: url('http://savonapizza.pl/public/_savona/image/template/bg_pack.png') no-repeat -388px -60px;
+}
+
+.promosList {
+    width: 735px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.singlePromo {
+    width: 350px;
+    height: 108px;
+    margin-bottom: 10px;
+    padding: 0 8px 35px 8px;
+}
+.singlePromo.local {
+    margin-top: 100px;
+}
+
+.promoTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b01814;
+}
+.localesTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b01814;
+    text-decoration: none;
+}
+.localesTitle:hover {
+    text-decoration: underline;
+}
+.promoDate {
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+.promoText {
+    width: 230px;
+    height: 60px;
+    display: block;
+    line-height: 15px;
+}

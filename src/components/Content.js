@@ -5,7 +5,7 @@ import promobanner from '../img/promobanner.jpg'
 import locationbanner from '../img/locationbanner.jpg'
 import bbqbanner from '../img/bbqbanner.png'
 import logoSmall from '../img/savona-logo-small.png'
-import fblogo from '../img/fblogo.png'
+import { BrowserRouter as Route,Routes, Link } from 'react-router-dom'
 
 
 const allNews = [{
@@ -36,9 +36,9 @@ const Content = () => {
         </a>
         <div className="info">
           <div className="leftColumn">
-            <img className="leftItem" src={promobanner} alt="" />
-            <img className="leftItem" src={locationbanner} alt="" />
-            <img className="leftItem" src={bbqbanner} alt="" />
+            <Link to='/promocje'><img className="leftItem" src={promobanner} alt="" /></Link>
+            <Link to='/nasze-lokale'><img className="leftItem" src={locationbanner} alt="" /></Link>
+            <Link to='/bbq'><img className="leftItem" src={bbqbanner} alt="" /></Link>
           </div>
           <div className="rightColumn">
             <div className="news">

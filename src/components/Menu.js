@@ -18,12 +18,13 @@ const Menu = () => {
           {categories.map((e, index)=>{
             return(
               <div className="categoryContainer" key={e}>
-                <Link to={`/menu/${e.toLowerCase().replace(/\s+/g, '-')}`} className='category'>{e}</Link>
+                <Link to={`/menu#${e.toLowerCase().replace(/\s+/g, '-')}`} className='category'>{e}</Link>
                 {index!==8?<div className="separate"></div>:''}  
               </div>
             )
           })}
         </div>
+        
     </div>
     
   )
