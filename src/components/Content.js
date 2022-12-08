@@ -6,26 +6,7 @@ import locationbanner from '../img/locationbanner.jpg'
 import bbqbanner from '../img/bbqbanner.png'
 import logoSmall from '../img/savona-logo-small.png'
 import { BrowserRouter as Route,Routes, Link } from 'react-router-dom'
-
-
-const allNews = [{
-  id: 1,
-  date: '16-09-2013',
-  text: 'Franczyza - czas na Twoją SAVONĘ !'
-}, {
-  id: 2,
-  date: '17-04-2014',
-  text: 'FanPage'
-}, {
-  id: 3,
-  date: '19-10-2014',
-  text: '20 Urodziny Savony'
-}, {
-  id: 4,
-  date: '22-07-2020',
-  text: 'Uwaga dodatkowa forma płatności'
-}]
-
+import {allNews} from './data/news'
 
 const Content = () => {
  
@@ -43,9 +24,9 @@ const Content = () => {
           <div className="rightColumn">
             <div className="news">
               {allNews.slice(0).reverse().map((item) => (
-                <div className='fullItem'>
+                <div className='fullItem' key={item.id}>
                   <span className="newsDate">{item.date}</span> 
-                  <a href='#' className='newsItem'>{item.text}</a>
+                  <Link to={`/news/${item.id}`} className='newsItem'>{item.text}</Link>
                 </div>
               ) )}
             </div>

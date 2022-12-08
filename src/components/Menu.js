@@ -3,7 +3,8 @@ import './styles/Menu.css'
 import Aside from './Aside'
 import Path from './Path'
 import {BrowserRouter as Router, Routes, Route, useParams, useLocation, Link} from 'react-router-dom'
-import {pizzas} from './menu_products'
+import {pizzas} from './data/menu_products.js'
+import dot from '../img/dot.gif'
 
 const categories = ['Pizza','Sosy', 'Ekstra dodatki', 'Pasta','Sałatki','Inne propozycje','Napoje', 'Zestawy Promocyjne', 'Strefa Malucha i nie tylko']
 
@@ -13,7 +14,7 @@ const Menu = () => {
     const {pathname} = useLocation()
   return (
     <div className='content'>
-        <Path location={pathname}/>
+        <Path urlsAmount={1} url1='Menu'/>
         <div className="categories">
           {categories.map((e, index)=>{
             return(

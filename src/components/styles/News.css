@@ -1,0 +1,24 @@
+.newsText {
+    font-size: 13px;
+}
+.itemTitle.newsTitle {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 16px;
+}
+.newsDate {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 9px;
+}
+.franchiseSecondPhoto {
+    width: 718px;
+}
+.newsLink {
+    text-decoration: none;
+    color: #bc1e1c;
+}
+.fanPagePhoto {
+    width: 755px;
+    margin-top: 20px;
+}

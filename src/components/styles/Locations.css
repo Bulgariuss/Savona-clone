@@ -1,0 +1,16 @@
+.localesTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b01814;
+    text-decoration: none;
+}
+.localesTitle:hover {
+    text-decoration: underline;
+}
+.bigger {
+    font-size: 13px;
+    font-weight: bold;
+}
+.inside {
+    text-decoration: none !important;
+}

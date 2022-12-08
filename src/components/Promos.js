@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Path from './Path'
 import './styles/Promos.css'
 import {BrowserRouter as Router, Routes, Route, useLocation, Link} from 'react-router-dom'
-
+import dot from '../img/dot.gif'
 const allPromos = [{
     id: 1,
     title: 'Zestaw CZTEROPAK',
@@ -41,20 +41,20 @@ const Promos = () => {
             return (
                 allPromos.map((e, index)=>{
                 if(index > 3) return;
-                return(<div className="singlePromo" key={e.id}>
-                    <h1 className="promoTitle">{e.title}</h1>
-                    <p className="promoDate">{e.date}</p>
-                    <p className="promoText">{e.text}</p>
+                return(<div className="singleItem" key={e.id}>
+                    <h1 className="itemTitle">{e.title}</h1>
+                    <p className="itemDate">{e.date}</p>
+                    <p className="itemText">{e.text}</p>
                 </div>)
             }))}
         if(activePage===2){ 
             return (
                 allPromos.map((e, index)=>{
                 if(index < 4) return;
-                return(<div className="singlePromo" key={e.id}>
-                    <h1 className="promoTitle">{e.title}</h1>
-                    <p className="promoDate">{e.date}</p>
-                    <p className="promoText">{e.text}</p>
+                return(<div className="singleItem" key={e.id}>
+                    <h1 className="itemTitle">{e.title}</h1>
+                    <p className="itemDate">{e.date}</p>
+                    <p className="itemText">{e.text}</p>
                 </div>)
             }))}
     }
@@ -89,7 +89,7 @@ const Promos = () => {
 
   return (
     <div className='content'>
-        <Path location={pathname}/>
+        <Path urlsAmount={1} url1='Promocje'/>
         <div className="infoBanner">
             <div className="infoBannerTop">
                 <img src="http://savonapizza.pl/public/data/resource/upload/00001/647/centrala.png" alt="" />
