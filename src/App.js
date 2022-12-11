@@ -11,6 +11,8 @@ import LocationsTel from './components/LocationsTel.js'
 import Error from './components/Error.js'
 import News from './components/News.js'
 import Contact from './components/Contact.js'
+import Newsletter from './components/Newsletter.js'
+import Recommend from './components/Recommend.js'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
@@ -30,6 +32,8 @@ function App() {
            <Route exact path="/nasze-lokale/zamowienia" element={<LocationsTel/>}></Route>
            <Route path="/news/*" element={<News/>}></Route>
            <Route path="/formularz-kontaktowy" element={<Contact/>}></Route>
+           <Route path="/biuletyn" element={<Newsletter/>}></Route>
+           <Route path="/polec-nas" element={<Recommend/>}></Route>
            <Route path="*" element={<Error/>}></Route>       
           </Routes>
       </div>

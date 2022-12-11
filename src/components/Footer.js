@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="footerDivHeader"></div>
             <form>
               <input type="text" className="footerInput" placeholder='Twój adres e-mail' />
-              <button className="footerBtn"></button>
+              <Link to='/biuletyn'><button className="footerBtn"></button></Link>
             </form>
           </div>
           <div className="recommend">
@@ -19,7 +19,7 @@ const Footer = () => {
             <form>
               <input type="text" className="footerInput" placeholder='Adres e-mail znajomego' />
               <input type="text" className="footerInput" placeholder='Twoje imię' />
-              <button className="footerBtn"></button>
+              <Link to='/polec-nas'><button className="footerBtn"></button></Link>
             </form>
           </div>
           <div className="important">

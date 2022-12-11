@@ -87,6 +87,7 @@
     margin-left: 153px;
     background: url(http://savonapizza.pl/public/_savona/image/button/buttons_pack.png) no-repeat 0 -76px;
     border: none;
+    cursor: pointer;
 }
 .footerInput:nth-of-type(2){
     width: 129px;
