@@ -1,0 +1,76 @@
+.contactTitle {
+    font-size: 20px;
+    color: #b01814;
+    margin-top: 0;
+    
+}
+
+.contactText {
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.contactText.margined {
+    margin: 30px 0 20px 0 !important;
+}
+.contactText:nth-of-type(1){
+    margin-top: 20px;
+}
+.contactLink {
+    text-decoration: none;
+    color: #bc1e1c;
+}
+.formContainer {
+    display: flex;
+
+}
+.contactForm {
+    width: 380px;
+    background-color: #fff;
+    padding: 15px 20px 20px 20px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+.formInput {
+    display: block;
+    background-color: #F9E8C4;
+    border: 2px solid #F4D8A1;
+    border-bottom: none;
+    border-right: none;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 12px;
+    padding: 8px 8px;
+    border-radius: 10px;
+    width: 278px;
+    height: 13px;
+    margin-bottom: 10px;
+}
+.formInput::placeholder {
+    color: #530000;
+}
+.formInput:focus {
+    outline: none;
+}
+.formInput.textarea {
+    height: 104px;
+    resize: none;
+}
+.formSubmitBtn {
+    height: 35px;
+    width: 81px;
+    background: url('http://savonapizza.pl/public/_savona/image/button/buttons_pack.png') -235px -38px no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+.choosePizzeria {
+    padding-top: 15px;
+}
+.pizzeriaDetails {
+    font-size: 13px;
+    padding-top: 10px;
+}
+.pizzeriaDetailsText {
+    margin: 0;
+    
+}

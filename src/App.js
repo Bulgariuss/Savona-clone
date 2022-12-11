@@ -28,7 +28,7 @@ function App() {
            <Route exact path="/promocje" element={<Promos/>}></Route>
            <Route exact path="/nasze-lokale" element={<Locations/>}></Route>
            <Route exact path="/nasze-lokale/zamowienia" element={<LocationsTel/>}></Route>
-           <Route path="/news*" element={<News/>}></Route>
+           <Route path="/news/*" element={<News/>}></Route>
            <Route path="/formularz-kontaktowy" element={<Contact/>}></Route>
            <Route path="*" element={<Error/>}></Route>       
           </Routes>
