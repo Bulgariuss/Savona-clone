@@ -1,4 +1,4 @@
-.contactTitle {
+.formTitle {
     font-size: 20px;
     color: #b01814;
     margin-top: 0;
@@ -24,7 +24,7 @@
     display: flex;
 
 }
-.contactForm {
+.templateForm {
     width: 380px;
     background-color: #fff;
     padding: 15px 20px 20px 20px;

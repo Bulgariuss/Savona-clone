@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import './styles/Contact.css'
 import Path from './Path'
 import { Link } from 'react-router-dom'
@@ -120,14 +120,14 @@ const Contact = () => {
     <div className="content">
         <Path urlsAmount={1} url1='Kontakt'/>
         <div className="contactContainer">
-          <h1 className="contactTitle">Kontakt</h1>
+          <h1 className="formTitle">Kontakt</h1>
           <p className="contactText margined">Za pomocą poniższego formularza prześlij do nas swoje zapytanie. Na e-mail odpowiemy najszybciej jak to możliwe. Formularz <span style={{textDecoration: 'underline'}}>nie służy</span> do składania zamówień online.</p>
           <p className="contactText"><strong>Online zamówisz</strong> <Link className='contactLink' to='/menu'>tutaj</Link>.</p>
           <p className="contactText margined"><strong><i>Kliknij przycisk wybierz swoją pizzerię, zamawiaj w bliskiej SAVONIE. Teraz każdy lokal ma swój numer telefonu - dzwoń do najbliższej SAVONY!</i></strong></p>
         </div>
         <div className="formContainer">
-          <form className='contactForm' onSubmit={handleFormSubmit}>
-            <h1 className="contactTitle">Formularz kontaktowy</h1>
+          <form className='templateForm' onSubmit={handleFormSubmit}>
+            <h1 className="formTitle">Formularz kontaktowy</h1>
             <input value={formInfo.subject} name='subject' className='formInput' type="text" placeholder='Temat' onChange={handleInputChange}/>
             <input value={formInfo.email} name='email' className='formInput' type="text" placeholder='E-mail' onChange={handleInputChange}/>
             <textarea value={formInfo.message} name='message' className='formInput textarea' type="text" placeholder='Treść wiadomości' onChange={handleInputChange}/>
@@ -137,10 +137,10 @@ const Contact = () => {
             ref={captchaRef}
             onChange={captchaChange}
             />
-            <button className='formSubmitBtn' type='submit'></button>
+            <button className={`formSubmitBtn ${formInfo.captcha===false || !formInfo.subject || !formInfo.email || !formInfo.message?'disabled': ''}`} type='submit'></button>
           </form>
           <div className="choosePizzeria">
-            <h1 className="contactTitle">Wybierz swoją pizzerię</h1>
+            <h1 className="formTitle">Wybierz swoją pizzerię</h1>
             <select ref={inputFocus} onChange={handleSelect} id="pizzerias_select" style={{width: '280px'}}>
               <option ></option>
               <option value="pizzeria_1">Atłasowa</option>
@@ -159,7 +159,7 @@ const Contact = () => {
         </div>
         <br />
         <div className="contactContainer">
-          <h1 className="contactTitle">Dane kontaktowe</h1>
+          <h1 className="formTitle">Dane kontaktowe</h1>
           <p className="contactText">SAVONA Arkadiusz Cichocki</p>
           <p className="contactText">ul. Rynek Kościuszki 8 lok 1</p>
           <p className="contactText">15-426 Białystok</p>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Header from './components/Header.js'
 import Main from './components/Main.js'
@@ -17,6 +17,10 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
 function App() {
+  const [yourEmail, setYourEmail] = useState('')
+  const [friendEmail, setFriendEmail] = useState('')
+  const [yourName, setYourName] = useState('')
+  
   return (
     <Router>
     <div className="App">
@@ -32,13 +36,13 @@ function App() {
            <Route exact path="/nasze-lokale/zamowienia" element={<LocationsTel/>}></Route>
            <Route path="/news/*" element={<News/>}></Route>
            <Route path="/formularz-kontaktowy" element={<Contact/>}></Route>
-           <Route path="/biuletyn" element={<Newsletter/>}></Route>
-           <Route path="/polec-nas" element={<Recommend/>}></Route>
+           <Route path="/biuletyn" element={<Newsletter yourEmail={yourEmail} setYourEmail={setYourEmail}/>}></Route>
+           <Route path="/polec-nas" element={<Recommend friendEmail={friendEmail} setFriendEmail={setFriendEmail} yourName={yourName} setYourName={setYourName}/>}></Route>
            <Route path="*" element={<Error/>}></Route>       
           </Routes>
       </div>
      </div>
-      <Footer/>
+      <Footer yourEmail={yourEmail} setYourEmail={setYourEmail} friendEmail={friendEmail} setFriendEmail={setFriendEmail} yourName={yourName} setYourName={setYourName}/>
     </div>
     </Router>
   );
