@@ -21,7 +21,7 @@
     bottom: 5px;
     
 }
-.btn1 {
+.btnOrder {
     width: 153px;
     height: 38px;
     position: absolute;
@@ -29,7 +29,7 @@
     bottom: 20px;
     cursor: pointer;
 }
-.btn2 {
+.btnTrackOrder {
     width: 177px;
     height: 38px;
     position: absolute;
@@ -37,7 +37,7 @@
     top: 35px;
     cursor: pointer;
 }
-.btn3 {
+.btnLogin {
     width: 118px;
     height: 38px;
     position: absolute;

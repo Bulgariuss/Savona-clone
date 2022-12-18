@@ -21,8 +21,8 @@ const Newsletter = ({yourEmail='', setYourEmail}) => {
         <h1 className="formTitle">Rejestracja</h1>
         <input type="text" value={yourEmail} onChange={(e)=>setYourEmail(e.target.value)} className="formInput" placeholder='E-mail'/>
         <p>Kanały subskrypcji</p>
-        <p style={{display: 'block'}}><input checked={promosChecked} onClick={()=>handleCheckbox('promos')} type="checkbox"/>Promocje</p>
-        <p style={{display: 'block'}}><input checked={newsChecked} onClick={()=>handleCheckbox('news')} type="checkbox"/>Aktualności</p>
+        <p style={{display: 'block'}}><input checked={promosChecked} onChange={()=>handleCheckbox('promos')} type="checkbox"/>Promocje</p>
+        <p style={{display: 'block'}}><input checked={newsChecked} onChange={()=>handleCheckbox('news')} type="checkbox"/>Aktualności</p>
         <ReCAPTCHA
         sitekey={process.env.REACT_APP_SITE_KEY}
         ref={captchaRef}

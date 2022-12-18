@@ -28,3 +28,130 @@
     height: 20px;
     background: url('http://savonapizza.pl/public/_savona/image/icon/icons_pack.png') no-repeat center -32px;
 }
+.menuCategoryContainer {
+    position: relative;
+}
+.menuCategoryHeader {
+    height: 55px;
+    background: url('http://savonapizza.pl/public/_savona/image/template/menu_header.png') no-repeat scroll 0 0 transparent;
+    color: #FFF;
+    line-height: 50px;
+    text-indent: 21px;
+    width: 735px;
+    border-radius: 0 0 9px 9px;
+    position: relative;
+}
+.menuCategoryTitle {
+    font-size: 28px;
+    font-family: serif;
+    opacity: 0.9;
+}
+a {
+    text-decoration: none;
+}
+.sizes{
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    right: 20px;
+}
+.size{
+    background: url('http://savonapizza.pl/public/_savona/image/template/menu_property.png') no-repeat bottom left;
+    color: #FFF;
+    font-size: 20px;
+    width: 80px;
+    height: 45px;
+    position: relative;
+}
+.size p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    text-indent: 0;
+    line-height: 0;
+    opacity: .9;
+    font-family: serif;
+    font-weight: bold;
+}
+.menuCategoryContent {
+    margin-top: -5px;
+    position: relative;
+}
+.menuItem {
+    width: 735px;
+    height: 84px;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 1px;
+    position: relative;
+}
+.menuItem.threeIngredients {
+    height: 115px;
+}
+.menuItemImg {
+    width: 71px;
+    height: 59px;
+    margin: auto 0 auto 20px
+}
+.menuItemInfoBox {
+    padding: 10px 0 10px 12px;
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    height: 63px;
+    margin-top: 3px;
+}
+.menuItemInfoBox.onePrice {
+    width: 532px;
+}
+.menuItemInfoBox.twoprices {
+    width: 452px;
+}
+.menuItemName {
+    color: #ce362e;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+    padding: 0;
+}
+.menuItemName.noIngredients {
+    margin: auto 0;
+}
+.menuItemIngredients {
+    margin-top: 0;
+    font-size: 12px;
+}
+.menuItemSizes {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    height: 84px;
+}
+.menuItemSizes.bigger {
+    height: 115px;
+}
+.menuItemSize {
+    background: url('http://savonapizza.pl/public/_savona/image/template/bg_menu.gif') repeat-y 0 0;
+    width: 80px;
+    padding-top: 10px;
+}
+.menuItemPrice {
+    color: #ce362e;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.menuItemAdd {
+        width: 61px;
+    height: 17px;
+    display: block;
+    margin: auto;
+    background: url('http://savonapizza.pl/public/_savona/image/button/buttons_pack.png') no-repeat -265px -76px;
+    border: none;
+    cursor: pointer;
+}

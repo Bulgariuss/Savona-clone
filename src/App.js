@@ -13,6 +13,8 @@ import News from './components/News.js'
 import Contact from './components/Contact.js'
 import Newsletter from './components/Newsletter.js'
 import Recommend from './components/Recommend.js'
+import Order from './components/Order.js'
+import TrackOrder from './components/TrackOrder.js'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
@@ -35,6 +37,8 @@ function App() {
            <Route exact path="/nasze-lokale" element={<Locations/>}></Route>
            <Route exact path="/nasze-lokale/zamowienia" element={<LocationsTel/>}></Route>
            <Route path="/news/*" element={<News/>}></Route>
+           <Route path="/order" element={<Order/>}></Route>
+           <Route path="/order/track" element={<TrackOrder/>}></Route>
            <Route path="/formularz-kontaktowy" element={<Contact/>}></Route>
            <Route path="/biuletyn" element={<Newsletter yourEmail={yourEmail} setYourEmail={setYourEmail}/>}></Route>
            <Route path="/polec-nas" element={<Recommend friendEmail={friendEmail} setFriendEmail={setFriendEmail} yourName={yourName} setYourName={setYourName}/>}></Route>
