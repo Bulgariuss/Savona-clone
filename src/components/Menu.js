@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import './styles/Menu.css'
 import Path from './Path'
-import {BrowserRouter as Router, Routes, Route, useParams, useLocation, Link} from 'react-router-dom'
+import {useLocation, Link} from 'react-router-dom'
 import {pizzas, sauces, extra, pasta, salads, others, drinks, promos, forKids} from './data/menu_products.js'
 
 
@@ -11,13 +11,17 @@ const Menu = () => {
     // let menu = useParams()
     // console.log(menu)
     const path = useLocation()
-    console.log(path)
 
-    const renderClosedCategory = (title, url)=>{
+    const handleScroll = (top)=>{
+      window.scrollTo(0, top)
+    }
+
+    const renderClosedCategory = (title, url, top)=>{
+
       return(
       <div className="menuCategoryContainer">
         <Link Link to={url} >
-          <div  className="menuCategoryHeader">
+          <div className="menuCategoryHeader"  onClick={()=>handleScroll(top)}>
             <h1 className="menuCategoryTitle">{title}</h1>
           </div>
         </Link>
@@ -86,15 +90,15 @@ const Menu = () => {
             )
           })}
         </div>
-        {path.hash==='#pizza' || !path.hash ? renderActiveCategory('Pizza', pizzas) : renderClosedCategory('Pizza', '/menu#pizza')}
-        {path.hash==='#sosy' ? renderActiveCategory('Sosy', sauces) : renderClosedCategory("Sosy", '#sosy')}
-        {path.hash==='#ekstra-dodatki' ? renderActiveCategory('Ekstra dodatki', extra) : renderClosedCategory('Ekstra dodatki','/menu#ekstra-dodatki')}
-        {path.hash==='#pasta' ? renderActiveCategory('Pasta', pasta) : renderClosedCategory('Pasta','/menu#pasta')}
-        {path.hash==='#salatki' ? renderActiveCategory('Sałatki', salads) : renderClosedCategory('Sałatki','/menu#salatki')}
-        {path.hash==='#inne-propozycje' ? renderActiveCategory('Inne propozycje', others) : renderClosedCategory('Inne propozycje','/menu#inne-propozycje')}
-        {path.hash==='#napoje' ? renderActiveCategory('Napoje', drinks) : renderClosedCategory('Napoje','/menu#napoje')}
-        {path.hash==='#zestawy-promocyjne' ? renderActiveCategory('Zestawy Promocyjne', promos) : renderClosedCategory('Zestawy Promocyjne','/menu#zestawy-promocyjne')}
-        {path.hash==='#strefa-malucha-i-nie-tylko' ? renderActiveCategory('Strefa Malucha i nie tylko', forKids) : renderClosedCategory('Strefa Malucha i nie tylko','/menu#strefa-malucha-i-nie-tylko')}
+        {path.hash==='#pizza' || !path.hash ? renderActiveCategory('Pizza', pizzas) : renderClosedCategory('Pizza', '/menu#pizza', 285)}
+        {path.hash==='#sosy' ? renderActiveCategory('Sosy', sauces) : renderClosedCategory("Sosy", '#sosy', 360)}
+        {path.hash==='#ekstra-dodatki' ? renderActiveCategory('Ekstra dodatki', extra) : renderClosedCategory('Ekstra dodatki','/menu#ekstra-dodatki', 435)}
+        {path.hash==='#pasta' ? renderActiveCategory('Pasta', pasta) : renderClosedCategory('Pasta','/menu#pasta', 510)}
+        {path.hash==='#salatki' ? renderActiveCategory('Sałatki', salads) : renderClosedCategory('Sałatki','/menu#salatki', 585)}
+        {path.hash==='#inne-propozycje' ? renderActiveCategory('Inne propozycje', others) : renderClosedCategory('Inne propozycje','/menu#inne-propozycje', 660)}
+        {path.hash==='#napoje' ? renderActiveCategory('Napoje', drinks) : renderClosedCategory('Napoje','/menu#napoje', 735)}
+        {path.hash==='#zestawy-promocyjne' ? renderActiveCategory('Zestawy Promocyjne', promos) : renderClosedCategory('Zestawy Promocyjne','/menu#zestawy-promocyjne', 810)}
+        {path.hash==='#strefa-malucha-i-nie-tylko' ? renderActiveCategory('Strefa Malucha i nie tylko', forKids) : renderClosedCategory('Strefa Malucha i nie tylko','/menu#strefa-malucha-i-nie-tylko', 885)}
     </div>
     
   )
