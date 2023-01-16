@@ -1,0 +1,68 @@
+.registerCategoryContainer {
+    position: relative
+}
+.registerCategoryContent {
+    margin-top: -5px;
+    position: relative;
+}
+.registerItem {
+    width: 735px;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.registerElement {
+    width: 355px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.registerInputLabel {
+    font-size: 12px;
+    color: #671F1A;
+    padding: 0 15px 0px 0;
+    white-space: nowrap;
+    font-weight: bold;
+    display: inline-block;
+    width: 38px;
+    text-align: left;
+    margin-right: 84px;
+}
+.registerInput {
+    display: inline-block;
+    background-color: #F9E8C4;
+    border: 2px solid #F4D8A1;
+    border-bottom: none;
+    border-right: none;
+    color: #530000;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 8px 8px;
+    width: 218px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.registerInput:focus {
+    outline: none;
+}
+.registerBtn {
+    background: url('http://savonapizza.pl/public/_savona/image/button/buttons_pack.png') no-repeat;
+    background-position: -162px -138px;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 133px;
+}
+.registerElement:nth-last-of-type(1){
+    text-align: right;
+}
+.registerError {
+    color: #F56800;
+    margin: 0 0 7px 140px;
+    padding: 0;
+    font-size: 12px;
+}

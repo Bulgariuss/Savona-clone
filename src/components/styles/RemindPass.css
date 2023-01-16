@@ -1,0 +1,60 @@
+.remindContainer {
+    position: relative;
+}
+.remindCategoryContent {
+    margin-top: -5px;
+    position: relative;
+}
+.remindItem {
+    width: 735px;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.remindElement {
+    width: 362px;
+    text-align: left;
+    margin: 0 auto
+}
+.remindElement h1 {
+    font-size: 14px;
+}
+.remindInputLabel {
+    font-size: 12px;
+    color: #671F1A;
+    padding: 0 15px 0px 0;
+    white-space: nowrap;
+    font-weight: bold;
+    display: inline-block;
+    width: 38px;
+    text-align: left;
+}
+.remindInput {
+    background-color: #F9E8C4;
+    border: 2px solid #F4D8A1;
+    border-bottom: none;
+    border-right: none;
+    color: #530000;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 8px 8px;
+    width: 200px;
+    border-radius: 10px;
+}
+.remindInput:focus {
+    outline: none;
+}
+.remindSendBtn {
+    background: url('http://savonapizza.pl/public/_savona/image/button/buttons_pack.png') no-repeat;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    width: 81px;
+    background-position: -235px -38px;
+    transform: translateY(30%);
+    margin-left: 10px;
+}

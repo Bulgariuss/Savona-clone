@@ -17,7 +17,7 @@ const Header = () => {
             <img src={slogan} alt="" className='slogan'/>
             <Link to='/menu'><img src={btnOrder} alt="" className='btnOrder'/></Link>
             <Link to='/order/track'><img src={btnTrackOrder} alt="" className='btnTrackOrder'/></Link>
-            <img src={btnLogin} alt="" className='btnLogin'/>
+            <Link to='/login'><img src={btnLogin} alt="" className='btnLogin'/></Link>
         </div>
         <img src={glow} alt="" className="glow" />
 

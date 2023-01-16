@@ -1,0 +1,100 @@
+.loginCategoryContainer {
+    position: relative;
+}
+.loginCategoryContent {
+    margin-top: -5px;
+    position: relative;
+
+}
+.loginItem {
+    width: 735px;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.loginItem form {
+    display: inline-block;
+}
+.loginFormElement {
+    width: 271px;
+    text-align: left;
+}
+.loginFormElement:nth-of-type(3){
+    position: relative;
+}
+.loginInputLabel {
+    font-size: 12px;
+    color: #671F1A;
+    padding: 0 15px 0px 0;
+    white-space: nowrap;
+    font-weight: bold;
+    display: inline-block;
+    width: 38px;
+    text-align: left;
+}
+.loginInput {
+    background-color: #F9E8C4;
+    border: 2px solid #F4D8A1;
+    border-bottom: none;
+    border-right: none;
+    color: #530000;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 8px 8px;
+    width: 200px;
+    border-radius: 10px;
+}
+.loginInput:focus {
+    outline: none;
+}
+.passwordRemind {
+    display: inline-block;
+    font-size: 11px;
+    color: #bc1e1c;
+    cursor: pointer;
+}
+.loginFormBtn {
+    display: inline-block;
+    background: url('http://savonapizza.pl/public/_savona/image/button/buttons_pack.png') no-repeat;
+    height: 30px;
+    width: 83px;
+    background-position: -182px -168px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px;
+    position: absolute;
+    right: 0;
+}
+
+.loginFormElement h1 {
+    font-size: 12px;
+}
+.formRegisterBtn {
+    height: 30px;
+    width: 141px;
+    background: url('http://savonapizza.pl/public/_savona/image/button/buttons_pack.png') no-repeat;
+    background-position: -162px -138px;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+}
+.loginFormElement:nth-of-type(5){
+    text-align: center;
+}
+.loginFormElement:nth-of-type(4){
+    border-top: 1px #F7F2EC solid;
+    margin-top: 15px;
+    padding-top: 7px;
+}
+.loginError {
+    color: #F56800;
+    margin: 0 0 7px 55px;
+    padding: 0;
+    font-size: 12px;
+}

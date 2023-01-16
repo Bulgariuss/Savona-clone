@@ -21,8 +21,8 @@ const Menu = () => {
       return(
       <div className="menuCategoryContainer">
         <Link Link to={url} >
-          <div className="menuCategoryHeader"  onClick={()=>handleScroll(top)}>
-            <h1 className="menuCategoryTitle">{title}</h1>
+          <div className="categoryHeader"  onClick={()=>handleScroll(top)}>
+            <h1 className="categoryTitle">{title}</h1>
           </div>
         </Link>
       </div> )
@@ -31,8 +31,8 @@ const Menu = () => {
     const renderActiveCategory = (title, category=[])=>{
       return(
       <div className="menuCategoryContainer">
-          <div  className="menuCategoryHeader">
-            <h1 className="menuCategoryTitle">{title}</h1>
+          <div  className="categoryHeader">
+            <h1 className="categoryTitle">{title}</h1>
             {title==='Pizza' || title==='Ekstra dodatki' ? 
               <div className='sizes'>
                 <div className='size'><p>24cm</p></div>
@@ -50,7 +50,7 @@ const Menu = () => {
           <div className='menuCategoryContent'>
             {category.map((e)=>{
               return(
-                <div className={`menuItem ${e.name==='ZESTAW DLA KAŻDEGO COŚ DOBREGO' && e.ingredients.length===3?'threeIngredients': ''}`}>
+                <div key={e.id} className={`menuItem ${e.name==='ZESTAW DLA KAŻDEGO COŚ DOBREGO' && e.ingredients.length===3?'threeIngredients': ''}`}>
                   <img src={e.img ? e.img : 'http://savonapizza.pl/public/img/imageNotFoundMini.gif'} alt="" className="menuItemImg" />
                   <div className={`menuItemInfoBox ${e.price.length===1?'onePrice':''} ${e.length===2?'twoPrices':''}`}>
                     <h1 className={`menuItemName ${!e.ingredients ? 'noIngredients' : ''}`}>{e.name}</h1>
@@ -99,6 +99,10 @@ const Menu = () => {
         {path.hash==='#napoje' ? renderActiveCategory('Napoje', drinks) : renderClosedCategory('Napoje','/menu#napoje', 735)}
         {path.hash==='#zestawy-promocyjne' ? renderActiveCategory('Zestawy Promocyjne', promos) : renderClosedCategory('Zestawy Promocyjne','/menu#zestawy-promocyjne', 810)}
         {path.hash==='#strefa-malucha-i-nie-tylko' ? renderActiveCategory('Strefa Malucha i nie tylko', forKids) : renderClosedCategory('Strefa Malucha i nie tylko','/menu#strefa-malucha-i-nie-tylko', 885)}
+
+        <div className="orderBtnContainer">
+          <Link to='/order' className='menuOrderBtn'></Link>
+        </div>
     </div>
     
   )

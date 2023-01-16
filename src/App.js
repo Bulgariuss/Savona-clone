@@ -15,20 +15,22 @@ import Newsletter from './components/Newsletter.js'
 import Recommend from './components/Recommend.js'
 import Order from './components/Order.js'
 import TrackOrder from './components/TrackOrder.js'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Login from './components/Login.js'
+import Register from './components/Register.js'
+import RemindPass from './components/RemindPass.js'
+import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom'
 
 
 function App() {
   const [yourEmail, setYourEmail] = useState('')
   const [friendEmail, setFriendEmail] = useState('')
   const [yourName, setYourName] = useState('')
-  
   return (
     <Router>
     <div className="App">
       <Header/>
       <div className="mainbg">
-       <div className='main-container'>
+       <div className={`main-container`}>
           <Aside/>
           <Routes>
            <Route exact path="/" element={<Main/>}/>
@@ -42,6 +44,9 @@ function App() {
            <Route path="/formularz-kontaktowy" element={<Contact/>}></Route>
            <Route path="/biuletyn" element={<Newsletter yourEmail={yourEmail} setYourEmail={setYourEmail}/>}></Route>
            <Route path="/polec-nas" element={<Recommend friendEmail={friendEmail} setFriendEmail={setFriendEmail} yourName={yourName} setYourName={setYourName}/>}></Route>
+           <Route path="/login" element={<Login/>}></Route>       
+           <Route path="/register" element={<Register/>}></Route>       
+           <Route path="/remind-password" element={<RemindPass/>}></Route>       
            <Route path="*" element={<Error/>}></Route>       
           </Routes>
       </div>
